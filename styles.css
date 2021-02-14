@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  height: 100vh;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(./images/background-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  /* height: 100%; */
+  margin: 0 auto;
+  /* background-color: yellow; */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+  /* background-color: blue; */
+}
+
+.row {
+  margin-top: 50px;
+}
+
+.col-1 {
+  text-align: center;
+}
+
+.title {
+  color: #35E89D;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+.subtitle {
+  color: #FFFFFF;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.input {
+  color: #FFFFFF;
+  box-sizing: border-box;
+  padding: 1em;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #236886;
+}
+
+.input::placeholder {
+  color: #ebebeb;
+  opacity: 0.9;
+}
+
+.spacer {
+  height: 0.5em;
+}
+
+.button {
+  color: #333333;
+  box-sizing: border-box;
+  padding: 1em;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #35E89D;
+}
+
+.image {
+  display: none;
+}
+/* Tablet 768px */
+@media screen and (min-width: 48em) {
+  body {
+    background-image: none;
+    background-color: #0E2F3E;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .col-1 {
+    flex: 1;
+    text-align: left;
+  }
+
+  .group {
+    position: relative;
+  }
+
+  .button {
+    position: absolute;
+    width: 100%;
+    max-width: 120px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+
+  .col-2 {
+    flex: 1;
+  }
+
+  .spacer {
+    display: none;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    position: absolute;
+    top: 150px;
+    overflow-x: hidden;
+  }
+}
+
+/* Laptop 13inch */
+@media screen and (min-width: 80em) {
+  .container {
+    width: 80%;
+  }
+
+  .logo-container {
+    justify-content: flex-start;
+  }
+
+  .row {
+    margin-top: 50px;
+  }
+
+  .button {
+    max-width: 200px;
+  }
+
+  .image {
+    position: static;
+    max-width: 700px;
+  }
+}
