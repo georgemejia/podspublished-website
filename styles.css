@@ -21,16 +21,14 @@ body {
 
 .container {
   width: 90%;
-  /* height: 100%; */
+  max-width: 75em;
   margin: 0 auto;
-  /* background-color: yellow; */
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
   padding-top: 3em;
-  /* background-color: blue; */
 }
 
 .row {
@@ -90,6 +88,7 @@ body {
 .image {
   display: none;
 }
+
 /* Tablet 768px */
 @media screen and (min-width: 48em) {
   body {
